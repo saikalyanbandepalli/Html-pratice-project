@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>User Dashboard</h1>
+    <div id="userRole"></div>
+    <div id="taskContainer">
+        <h2>Task Management</h2>
+        <div id="taskBoard">
+            <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>To Do</h3>
+                <div draggable="true" ondragstart="drag(event)">Task 1: Research</div>
+                <div draggable="true" ondragstart="drag(event)">Task 2: Design</div>
+                <div draggable="true" ondragstart="drag(event)">Task 3: Planning</div>
+            </div>
+            <div class="column" id="inProgress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>In Progress</h3>
+                <div draggable="true" ondragstart="drag(event)">Task 4: Development</div>
+                <div draggable="true" ondragstart="drag(event)">Task 5: Code Review</div>
+                <div draggable="true" ondragstart="drag(event)">Task 6: Testing</div>
+            </div>
+            <div class="column" id="testing" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>Testing</h3>
+                <div draggable="true" ondragstart="drag(event)">Task 7: User Acceptance Testing</div>
+            </div>
+            <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>Done</h3>
+                <div draggable="true" ondragstart="drag(event)">Task 8: Documentation</div>
+                <div draggable="true" ondragstart="drag(event)">Task 9: Deployment</div>
+                <div draggable="true" ondragstart="drag(event)">Task 10: Maintenance</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
